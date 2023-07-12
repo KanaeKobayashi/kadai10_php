@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@200;300;400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5; 
+}
+h1.title {
+  text-align: center;
+  color:#0056b3;
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+#home{
+  background-image: url("/img/cat.png");
+}
+
+.formWrapper{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.formWrapper label {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.formWrapper input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+.formWrapper textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+ resize: horizontal;
+}
+.star-rating {
+    direction: rtl;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.star-rating > input {
+    display: none;
+}
+
+.star-rating > label:before {
+    content: "\2605";
+    color: #ccc;
+}
+
+.star-rating > input:checked ~ label:before {
+    color: gold;
+}
+
+.formWrapper input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.formWrapper input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.comment{
+  text-align: center;
+}
+
+
+.formWrapper input[type="button"] {
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.formWrapper input[type="button"]:hover {
+  background-color: #0056b3;
+}
+#searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* 各本の間のギャップを制御 */
+}
+
+#searchResults div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(20% - 20px); /* ギャップを補償するために20pxを引く */
+  box-sizing: border-box;
+}
+
+#searchResults img {
+  width: 100%;
+  height: auto; /* 画面に合わせて画像の大きさを変更するギャップを補償するために20pxを引く */
+}
+
+button{
+  cursor: pointer;
+}
